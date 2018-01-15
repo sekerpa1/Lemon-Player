@@ -18,7 +18,7 @@
     {
       "client_info": {
         "android_client_info": {
-          "package_name": "com.simplecity.amp_pro"
+          "package_name": "com.lemon.player"
         }
       },
       "api_key": [
@@ -30,7 +30,7 @@
     {
       "client_info": {
         "android_client_info": {
-          "package_name": "com.simplecity.amp_pro.debug"
+          "package_name": "com.lemon.player.debug"
         }
       },
       "api_key": [

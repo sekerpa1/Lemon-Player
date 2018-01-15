@@ -49,7 +49,7 @@ android {
     }
 
     compileSdkVersion versions.compileSdk
-    buildToolsVersion versions.buildTools
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion versions.minSdk
@@ -149,7 +149,7 @@ android {
         dev {
             dimension "all"
 
-            applicationId "com.simplecity.amp_pro"
+            applicationId "com.lemon.player"
 
             //Enable multiDex for debug builds, since they don't use proguard
             multiDexEnabled true
@@ -159,7 +159,7 @@ android {
 
         paid {
             dimension "all"
-            applicationId "com.simplecity.amp_pro"
+            applicationId "com.lemon.player"
         }
 
         free {
@@ -169,7 +169,7 @@ android {
 
         amazonPaid {
             dimension "all"
-            applicationId "com.simplecity.amp_pro"
+            applicationId "com.lemon.player"
         }
 
         amazonFree {
@@ -212,13 +212,10 @@ android {
 }
 
 dependencies {
-
     implementation fileTree(include: '*.jar', dir: 'libs')
-
     // //////////////////////////////////////////////////////////////////////////
     // Google libs
     // /////////////////////////////////////////////////////////////////////////
-
     implementation libs.cardView
     implementation libs.design
     implementation libs.palette
@@ -230,11 +227,9 @@ dependencies {
     implementation libs.firebaseRemoteConfig
     implementation libs.constraintLayout
     implementation libs.chromecast
-
     // //////////////////////////////////////////////////////////////////////////
     // Square libs
     // /////////////////////////////////////////////////////////////////////////
-
     implementation libs.okio
     implementation libs.okhttp
     implementation libs.retrofit
@@ -243,11 +238,9 @@ dependencies {
     debugImplementation libs.haha
     debugImplementation libs.leakCanaryDebug
     releaseImplementation libs.leakCanaryRel
-
     // //////////////////////////////////////////////////////////////////////////
     // External libs
     // /////////////////////////////////////////////////////////////////////////
-
     implementation libs.navigation
     implementation libs.recyclerAdapter
     implementation libs.multiSheetView
@@ -259,7 +252,6 @@ dependencies {
     implementation libs.glideOkhttp
     implementation libs.glidePalette
     implementation libs.permiso
-
     implementation libs.rxAndroid
     implementation libs.rxBinding
     implementation libs.rxBindingAppCompat
@@ -269,7 +261,6 @@ dependencies {
     implementation libs.rxBroadcast
     implementation libs.rxPrefs
     implementation 'com.tspoon.traceur:traceur:1.0.1'
-
     implementation libs.streams
     implementation(libs.crashlytics) {
         transitive = true
@@ -282,16 +273,13 @@ dependencies {
     annotationProcessor libs.daggerAnnotationProcessor
     implementation libs.expandableRecyclerView
     implementation libs.aesthetic
-
     // //////////////////////////////////////////////////////////////////////////
     // Multidex (Only used in non-proguard pre-21 builds)
     // /////////////////////////////////////////////////////////////////////////
     implementation libs.multiDex
-
     // //////////////////////////////////////////////////////////////////////////
     // Testing
     // /////////////////////////////////////////////////////////////////////////
-
     testImplementation libs.junit
     testImplementation libs.mockito
     testImplementation libs.powermock

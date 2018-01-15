@@ -33,7 +33,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="parent"/>
 
-            <com.simplecity.amp_library.ui.views.RepeatingImageButton
+            <com.lemon.player.ui.views.RepeatingImageButton
                 android:id="@+id/prev"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
@@ -47,7 +47,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/play"
                 app:layout_constraintTop_toBottomOf="parent"/>
 
-            <com.simplecity.amp_library.ui.views.RepeatingImageButton
+            <com.lemon.player.ui.views.RepeatingImageButton
                 android:id="@+id/next"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
@@ -72,7 +72,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="parent"/>
 
-            <com.simplecity.amp_library.ui.views.PlayPauseView
+            <com.lemon.player.ui.views.PlayPauseView
                 android:id="@+id/play"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
@@ -154,7 +154,7 @@
 
     </LinearLayout>
 
-    <com.simplecity.amp_library.ui.views.SizableSeekBar
+    <com.lemon.player.ui.views.SizableSeekBar
         android:id="@+id/seekbar"
         style="@style/SeekBar.NoBackground"
         android:layout_width="match_parent"

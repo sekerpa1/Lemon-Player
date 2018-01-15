@@ -14,9 +14,9 @@
         app:shortcutLongLabel="@string/shortcut_play_long_label"
         app:shortcutShortLabel="@string/shortcut_play_short_label">
         <intent
-            android:action="com.simplecity.amp_library.shortcuts.PLAY"
-            android:targetClass="com.simplecity.amp_library.ui.activities.ShortcutTrampolineActivity"
-            android:targetPackage="com.simplecity.amp_pro"/>
+            android:action="com.lemon.player.shortcuts.PLAY"
+            android:targetClass="com.lemon.player.ui.activities.ShortcutTrampolineActivity"
+            android:targetPackage="com.lemon.amp_pro"/>
     </shortcut>
            
     <shortcut
@@ -31,9 +31,9 @@
         app:shortcutLongLabel="@string/shortcut_shuffle_long_label"
         app:shortcutShortLabel="@string/shortcut_shuffle_short_label">
         <intent
-            android:action="com.simplecity.amp_library.shortcuts.SHUFFLE"
-            android:targetClass="com.simplecity.amp_library.ui.activities.ShortcutTrampolineActivity"
-            android:targetPackage="com.simplecity.amp_pro"/>
+            android:action="com.lemon.player.shortcuts.SHUFFLE"
+            android:targetClass="com.lemon.player.ui.activities.ShortcutTrampolineActivity"
+            android:targetPackage="com.lemon.amp_pro"/>
     </shortcut> 
            
     <shortcut
@@ -48,9 +48,9 @@
         app:shortcutLongLabel="@string/shortcut_folders_long_label"
         app:shortcutShortLabel="@string/shortcut_folders_short_label">
         <intent
-            android:action="com.simplecity.amp_library.shortcuts.FOLDERS"
-            android:targetClass="com.simplecity.amp_library.ui.activities.ShortcutTrampolineActivity"
-            android:targetPackage="com.simplecity.amp_pro"/>
+            android:action="com.lemon.player.shortcuts.FOLDERS"
+            android:targetClass="com.lemon.player.ui.activities.ShortcutTrampolineActivity"
+            android:targetPackage="com.lemon.amp_pro"/>
     </shortcut>
 
     <!--<shortcut-->

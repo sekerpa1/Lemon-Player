@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-          package="com.simplecity.multisheetview"
+          package="com.lemon.multisheetview"
 >
 
     <application android:allowBackup="true"

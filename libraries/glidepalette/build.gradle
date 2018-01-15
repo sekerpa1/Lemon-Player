@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion versions.compileSdk
-    buildToolsVersion versions.buildTools
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion versions.minSdk
@@ -17,10 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation libs.palette
     implementation libs.supportv4
     implementation libs.glide

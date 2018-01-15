@@ -15,7 +15,7 @@
 
 package com.android.vending.billing.utils;
 
-import com.simplecity.amp_library.BuildConfig;
+import com.lemon.player.BuildConfig;
 
 import android.text.TextUtils;
 import android.util.Log;

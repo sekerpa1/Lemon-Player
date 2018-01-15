@@ -63,7 +63,7 @@
 
     </LinearLayout>
 
-    <com.simplecity.amp_library.ui.views.PlayCountView
+    <com.lemon.player.ui.views.PlayCountView
         android:id="@+id/play_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

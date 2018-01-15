@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:behavior_peekHeight="@dimen/bottom_sheet_peek_1_height"
-        app:layout_behavior="com.simplecity.multisheetview.ui.behavior.CustomBottomSheetBehavior"
+        app:layout_behavior="com.lemon.multisheetview.ui.behavior.CustomBottomSheetBehavior"
         tools:ignore="MissingPrefix">
 
         <FrameLayout
@@ -43,7 +43,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 app:behavior_peekHeight="@dimen/bottom_sheet_peek_2_height"
-                app:layout_behavior="com.simplecity.multisheetview.ui.behavior.CustomBottomSheetBehavior">
+                app:layout_behavior="com.lemon.multisheetview.ui.behavior.CustomBottomSheetBehavior">
 
                 <FrameLayout
                     android:id="@+id/sheet2Container"

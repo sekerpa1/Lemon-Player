@@ -23,10 +23,10 @@
 -keep class !android.support.v7.internal.view.menu.**,android.support.** {*;}
 
 # Custom MediaRouteActionProvider, referenced via menu action view class
--keep class com.simplecity.amp_library.ui.views.CustomMediaRouteActionProvider { *; }
+-keep class com.lemon.player.ui.views.CustomMediaRouteActionProvider { *; }
 
 # Custom Switch, referenced via menu action view class
--keep class com.simplecity.amp_library.ui.views.CustomSwitch { *; }
+-keep class com.lemon.player.ui.views.CustomSwitch { *; }
 
 # Another Switch, referenced via menu action view class
 -keep class com.afollestad.aesthetic.AestheticSwitchCompat { *; }
@@ -38,7 +38,7 @@
   **[] $VALUES;
   public *;
 }
--keepnames class com.simplecity.amp_library.glide.utils.CustomGlideModule
+-keepnames class com.lemon.player.glide.utils.CustomGlideModule
 -keep public class * implements com.bumptech.glide.module.GlideModule
 
 # JAudioTagger
@@ -76,8 +76,8 @@
 -keep class sun.misc.Unsafe { *; }
 #-keep class com.google.gson.stream.** { *; }
 # Application classes that will be serialized/deserialized over Gson
--keep class com.simplecity.amp_library.http.itunes.** { *; }
--keep class com.simplecity.amp_library.http.lastfm.** { *; }
+-keep class com.lemon.player.http.itunes.** { *; }
+-keep class com.lemon.player.http.lastfm.** { *; }
 # Prevent proguard from stripping interface information from TypeAdapterFactory,
 # JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
 -keep class * implements com.google.gson.TypeAdapterFactory

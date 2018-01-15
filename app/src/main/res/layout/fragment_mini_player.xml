@@ -34,7 +34,7 @@
             app:mpb_useIntrinsicPadding="false"
             tools:progress="50"/>
 
-        <com.simplecity.amp_library.ui.views.SquareHeightImageView
+        <com.lemon.player.ui.views.SquareHeightImageView
             android:id="@+id/mini_album_artwork"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -82,7 +82,7 @@
             android:layout_alignParentTop="true"
             android:src="@drawable/card_shadow"/>
 
-        <com.simplecity.amp_library.ui.views.PlayPauseView
+        <com.lemon.player.ui.views.PlayPauseView
             android:id="@+id/mini_play"
             android:layout_width="56dp"
             android:layout_height="56dp"

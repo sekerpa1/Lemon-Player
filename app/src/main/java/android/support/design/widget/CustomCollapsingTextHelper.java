@@ -38,7 +38,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.simplecity.amp_library.R;
+import com.lemon.player.R;
+
 
 @SuppressWarnings("RestrictedApi")
 public final class CustomCollapsingTextHelper {

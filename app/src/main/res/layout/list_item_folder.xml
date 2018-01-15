@@ -10,7 +10,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <com.simplecity.amp_library.ui.views.CircleImageView
+    <com.lemon.player.ui.views.CircleImageView
         android:id="@+id/image"
         android:layout_width="48dp"
         android:layout_height="48dp"

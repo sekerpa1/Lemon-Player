@@ -32,7 +32,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 
-import com.simplecity.amp_library.R;
+import com.lemon.player.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

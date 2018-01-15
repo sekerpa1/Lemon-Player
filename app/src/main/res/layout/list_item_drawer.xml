@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:minWidth="48dp">
 
-        <com.simplecity.amp_library.ui.views.OverflowButton
+        <com.lemon.player.ui.views.OverflowButton
             android:id="@+id/btn_overflow"
             android:layout_width="48dp"
             android:layout_height="44dp"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.simplecity.amp_library.ui.views.ThemedStatusBarView
+    <com.lemon.player.ui.views.ThemedStatusBarView
         android:id="@+id/statusBarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:titleEnabled="false">
 
-                <com.simplecity.amp_library.ui.views.BreadcrumbView
+                <com.lemon.player.ui.views.BreadcrumbView
                     android:id="@+id/breadcrumb_view"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"

@@ -9,7 +9,7 @@ import android.renderscript.RSRuntimeException;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 
-import com.simplecity.amp_library.ShuttleApplication;
+import com.lemon.player.ShuttleApplication;
 
 /**
  * Copyright (C) 2015 Wasabeef

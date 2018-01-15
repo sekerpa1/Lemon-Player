@@ -8,7 +8,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion versions.compileSdk
-    buildToolsVersion versions.buildTools
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion versions.minSdk
@@ -31,11 +31,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation libs.appcompat
     implementation libs.recyclerView
-
     implementation libs.rxJava
     implementation libs.rxAndroid
 }
