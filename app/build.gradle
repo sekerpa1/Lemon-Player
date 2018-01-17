@@ -212,6 +212,7 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(include: '*.jar', dir: 'libs')
     // //////////////////////////////////////////////////////////////////////////
     // Google libs
@@ -224,6 +225,7 @@ dependencies {
     implementation libs.recyclerView
     implementation libs.supportv4
     implementation libs.firebaseCore
+    implementation libs.admob
     implementation libs.firebaseRemoteConfig
     implementation libs.constraintLayout
     implementation libs.chromecast

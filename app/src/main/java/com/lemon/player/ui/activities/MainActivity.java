@@ -53,6 +53,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 import test.com.androidnavigation.fragment.BackPressHandler;
 import test.com.androidnavigation.fragment.BackPressListener;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends BaseCastActivity implements
         ToolbarListener,
@@ -75,7 +76,6 @@ public class MainActivity extends BaseCastActivity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         ShuttleApplication.getInstance().getAppComponent().inject(this);
 
         // If we haven't set any defaults, do that now
@@ -100,6 +100,12 @@ public class MainActivity extends BaseCastActivity implements
 
         navigationView = findViewById(R.id.navView);
 
+
+        //View mainContainer = findViewById(R.id.mainContainer);
+        View adView = findViewById(R.id.adView);
+
+        adView.bringToFront();
+
         //Ensure the drawer draws a content scrim over the status bar.
         drawerLayout = findViewById(R.id.drawer_layout);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT_WATCH) {
@@ -116,10 +122,14 @@ public class MainActivity extends BaseCastActivity implements
                     .commit();
         }
 
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+
         handleIntent(getIntent());
 
         // Calls through to IabManager.setup()
         IabManager.getInstance();
+
+
     }
 
     @Override

@@ -86,9 +86,7 @@
                     layout="@layout/contextual_toolbar" />
 
             </LinearLayout>
-
         </android.support.design.widget.CustomCollapsingToolbarLayout>
-
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView
@@ -110,5 +108,4 @@
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         app:useCompatPadding="true" />
-
 </android.support.design.widget.CoordinatorLayout>

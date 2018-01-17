@@ -44,6 +44,9 @@ public abstract class BaseFragment extends BaseController {
         ShuttleApplication.getInstance().getAppComponent()
                 .plus(new FragmentModule(this))
                 .inject(this);
+
+
+
     }
 
     @Override

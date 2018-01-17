@@ -127,6 +127,7 @@ ext.libs = [
         firebaseCore                  : "com.google.firebase:firebase-core:$versions.firebaseCore",
         firebaseRemoteConfig          : "com.google.firebase:firebase-config:$versions.firebaseRemoteConfig",
         appcompat                     : "com.android.support:appcompat-v7:${versions.supportLib}",
+        admob                         : "com.google.firebase:firebase-ads:$versions.firebaseCore",
         mediarouter                   : "com.android.support:mediarouter-v7:${versions.supportLib}",
         chromecast                    : "com.google.android.gms:play-services-cast:${versions.chromecast}",
         constraintLayout              : "com.android.support.constraint:constraint-layout:${versions.constraintLayout}",
