@@ -20,6 +20,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.afollestad.aesthetic.Aesthetic;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.greysonparrelli.permiso.Permiso;
 import com.lemon.player.BuildConfig;
 import com.lemon.player.IabManager;
@@ -69,6 +71,8 @@ public class MainActivity extends BaseCastActivity implements
     private View navigationView;
 
     private boolean hasPendingPlaybackRequest;
+
+    private AdView mAdView;
 
     @Inject
     NavigationEventRelay navigationEventRelay;
@@ -122,7 +126,11 @@ public class MainActivity extends BaseCastActivity implements
                     .commit();
         }
 
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+        MobileAds.initialize(this, "ca-app-pub-4292232813158643~1894833544");
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         handleIntent(getIntent());
 

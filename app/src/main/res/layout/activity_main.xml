@@ -16,18 +16,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-        <ImageView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:visibility="visible"
-            android:src="@drawable/rectangle"
-            />
-
-        <!--<com.google.android.gms.ads.AdView
+        <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="match_parent"
@@ -36,9 +25,8 @@
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
             android:visibility="visible"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-        </com.google.android.gms.ads.AdView>-->
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
     </android.support.design.internal.ScrimInsetsFrameLayout>
 
     <android.support.design.widget.NavigationView
