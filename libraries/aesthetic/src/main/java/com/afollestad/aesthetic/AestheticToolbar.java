@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 
@@ -46,6 +47,7 @@ public class AestheticToolbar extends Toolbar {
 
   private void init(Context context, @Nullable AttributeSet attrs){
     TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AestheticToolbar);
+    ViewCompat.setLayoutDirection(this, ViewCompat.LAYOUT_DIRECTION_RTL);
     transparentBackground = a.getBoolean(R.styleable.AestheticToolbar_transparentBackground, false);
     a.recycle();
   }

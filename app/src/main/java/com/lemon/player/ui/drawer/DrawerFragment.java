@@ -256,7 +256,7 @@ public class DrawerFragment extends BaseFragment implements
     public void closeDrawer() {
         DrawerLayout drawerLayout = getParentDrawerLayout(rootView);
         if (drawerLayout != null) {
-            drawerLayout.closeDrawer(Gravity.START);
+            drawerLayout.closeDrawer(Gravity.END);
         }
     }
 

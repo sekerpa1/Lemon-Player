@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="right">
 
     <include
         layout="@layout/drawer_header"
+        android:layout_gravity="right"
         android:layout_width="match_parent"
         android:layout_height="@dimen/drawer_header_height"/>
 

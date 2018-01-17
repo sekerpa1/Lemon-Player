@@ -5,8 +5,10 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:foregroundGravity="right"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    tools:openDrawer="right">
 
     <android.support.design.internal.ScrimInsetsFrameLayout
         android:id="@+id/mainContainer"
@@ -18,13 +20,14 @@
         android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start">
+        android:layout_gravity="right">
 
         <fragment
             android:id="@+id/navDrawerFragment"
             android:name="com.lemon.player.ui.drawer.DrawerFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
 
     </android.support.design.widget.NavigationView>
 

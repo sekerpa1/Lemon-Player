@@ -15,6 +15,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ import com.lemon.player.playback.MusicService;
 import com.lemon.player.sql.sqlbrite.SqlBriteUtils;
 import com.lemon.player.ui.dialog.ChangelogDialog;
 import com.lemon.player.ui.drawer.DrawerProvider;
+import com.lemon.player.ui.drawer.EndDrawerToggle;
 import com.lemon.player.ui.drawer.NavigationEventRelay;
 import com.lemon.player.ui.fragments.MainController;
 import com.lemon.player.utils.AnalyticsManager;
@@ -257,6 +259,8 @@ public class MainActivity extends BaseCastActivity implements
 
     @Override
     public void toolbarAttached(Toolbar toolbar) {
+
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
@@ -266,6 +270,18 @@ public class MainActivity extends BaseCastActivity implements
         };
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+
+               @Override
+                public void onClick(View v) {
+                    if (drawer.isDrawerOpen(Gravity.RIGHT)) {
+                        drawer.closeDrawer(Gravity.RIGHT);
+                    } else {
+                        drawer.openDrawer(Gravity.RIGHT);
+                   }
+                }
+            });
     }
 
     @Override
